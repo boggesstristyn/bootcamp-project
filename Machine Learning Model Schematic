@@ -7,3 +7,4 @@ To train our model, we will test the remaining features to determine if any unde
 ## What is the model's accuracy?
 
 ## How does this model work?
+A Random Forest Model works by combining multiple decision tree models into an Ensemble Learning model. The individual trees then "vote" on their predictions, increasing the accuracy and overall performance of the model over single decision tree model. As we are using home value and other variable data, uing this model final model will help account for the effect of outliers in the data.
