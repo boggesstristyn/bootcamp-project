@@ -1,14 +1,14 @@
 # Technologies Used
+
+
+## Data Cleaning and Analysis
 Our initial data sources are:
 - Austin Police Department Crime Data CSV: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu
 - Austin Housing Market Analysis Data by Zip Code CSV: https://data.austintexas.gov/Housing-and-Real-Estate/2014-Housing-Market-Analysis-Data-by-Zip-Code/hcnj-rei3
 - City of Austin Housing and Planning Displacement Risk Areas CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Areas-2019/rbpe-nc57
-- City of Austin Housing and Planning Displacement Risk Demographics CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Demographics-2019/ynwn-mw2f
-
-## Data Cleaning and Analysis
-We intend to use MongoDB as our database. We have manually saved the Austin Housing Market Analysis, Displacement Risk Areas, and Displacement Risk Demographics csv files, but as the APD Crime dataset is updated daily and contains over 2 million unique rows, we choose to use an API for this source. The database will connect to the data.austin.gov API and filter for incidents with occurrence dates later than 01/01/2014 and limiting the results to 10,000. If we find that our machine learning model could benefit from more data, we can easily edit these parameters. Using MongoDB will allow our database more flexibility compared to a SQL or SQLite database. Flask-pyMongo will be used to bridge Flask and MongoDB.
-
+- City of Austin Housing and Planning Displacement Risk Demographics CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Demographics-2019/ynwn-mw2fWe intend to use MongoDB as our database. We have manually saved the Austin Housing Market Analysis, Displacement Risk Areas, and 
 ## Database Storage
+Displacement Risk Demographics csv files, but as the APD Crime dataset is updated daily and contains over 2 million unique rows, we choose to use an API for this source. The database will connect to the data.austin.gov API and filter for incidents with occurrence dates later than 01/01/2014 and limiting the results to 10,000. If we find that our machine learning model could benefit from more data, we can easily edit these parameters. Using MongoDB will allow our database more flexibility compared to a SQL or SQLite database. Flask-pyMongo will be used to bridge Flask and MongoDB.
 
 
 ## Machine Learning
@@ -21,3 +21,4 @@ We intend to use MongoDB as our database. We have manually saved the Austin Hous
    Matplotlib is a very popular Python library for data visualization.
 
 ## Dashboard
+We intend to use Flask and Bootstrap’s features to build our dashboard. Since a couple of our datasets include longitude/latitude/zip code variables, we would like to build an interactive map that would allow the user to either enter their desired filter features and highlights on the map the areas that meet those filter specifications, or a map that allows the client to click on zip codes and presents them with a pop-up with information pertaining to that zip code (ex: median household income, population below poverty level, household size, crime rate).  We also intend to use CSS to customize and D3 to add interactivity. The dashboard will be hosted on GitHub Pages.
