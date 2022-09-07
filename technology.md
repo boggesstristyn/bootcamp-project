@@ -6,7 +6,7 @@ Our initial data sources are:
 - City of Austin Housing and Planning Displacement Risk Demographics CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Demographics-2019/ynwn-mw2f
 
 ## Data Cleaning and Analysis
-
+We intend to use MongoDB as our database. We have manually saved the Austin Housing Market Analysis, Displacement Risk Areas, and Displacement Risk Demographics csv files, but as the APD Crime dataset is updated daily and contains over 2 million unique rows, we choose to use an API for this source. The database will connect to the data.austin.gov API and filter for incidents with occurrence dates later than 01/01/2014 and limiting the results to 10,000. If we find that our machine learning model could benefit from more data, we can easily edit these parameters. Using MongoDB will allow our database more flexibility compared to a SQL or SQLite database. Flask-pyMongo will be used to bridge Flask and MongoDB.
 
 ## Database Storage
 
