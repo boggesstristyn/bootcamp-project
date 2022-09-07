@@ -1,4 +1,9 @@
 # Technologies Used
+Our initial data sources are:
+- Austin Police Department Crime Data CSV: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu
+- Austin Housing Market Analysis Data by Zip Code CSV: https://data.austintexas.gov/Housing-and-Real-Estate/2014-Housing-Market-Analysis-Data-by-Zip-Code/hcnj-rei3
+- City of Austin Housing and Planning Displacement Risk Areas CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Areas-2019/rbpe-nc57
+- City of Austin Housing and Planning Displacement Risk Demographics CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Demographics-2019/ynwn-mw2f
 
 ## Data Cleaning and Analysis
 
