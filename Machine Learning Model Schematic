@@ -1,10 +1,8 @@
 ## Which model did you choose and why?
-For this project, we are choosing a Random Forest Model. This will allow us to rank our choosen features by importance and determine if we need to perform further feature reduction. If our model finds multiple colinear features, we can perform PCA before running the Random Forest Model. In addition, we will also run GradientBoostedTree and XGBoost models and determine the most accurate prediction for our data.
+For this project, we will use a basic Logistic Regression model to serve as a baseline for comparison with a Random Forest Model. At a later stage, we will also test a Random Forest Model. This will allow us to rank our choosen features by importance and determine if we need to perform further feature reduction. If our model finds multiple colinear features, we can perform PCA before running the Random Forest Model. In addition, we will also run GradientBoostedTree and XGBoost models and determine the most accurate prediction for our data.
 
 ## How are you training your model?
 To train our model, we will test the remaining features to determine if any undersampling or oversampling will need to performed to our data before running our model. Depending on what kind of sampling is needed, we can adjust our model to use Logistic Regression or other distributions.
-
-## What is the model's accuracy?
 
 ## How does this model work?
 A Random Forest Model works by combining multiple decision tree models into an Ensemble Learning model. The individual trees then "vote" on their predictions, increasing the accuracy and overall performance of the model over single decision tree model. As we are using home value and other variable data, uing this model final model will help account for the effect of outliers in the data.
