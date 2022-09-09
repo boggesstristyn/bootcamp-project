@@ -4,7 +4,7 @@ For our final group project, we are analyzing crime rates in Austin while also l
 
 Austin Police Department Crime Data CSV: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu
 Austin Housing Market Analysis Data by Zip Code CSV: https://data.austintexas.gov/Housing-and-Real-Estate/2014-Housing-Market-Analysis-Data-by-Zip-Code/hcnj-rei3
-Displacement Risk Demographics: See Data Resources file
+2019 Displacement Risk Demographics: See Data Resources file
 
 For the mock-up, we were able to create an ERD database using the crime data csv file and Austin housing market csv file. We connected the two datasets by zipcode as the foreign key. From this we created two tables in PostgreSQL (in Database File file).
 
