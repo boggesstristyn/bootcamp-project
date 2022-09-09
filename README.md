@@ -5,6 +5,8 @@ For our final group project, we are analyzing crime rates in Austin while also l
 
 For the mock-up, we were able to create an ERD database using the crime data csv file and Austin housing market csv file. We connected the two datasets by zipcode as the foreign key. 
 
-![Alt Text]()
+
+
+![Alt Text](https://github.com/boggesstristyn/bootcamp-project/blob/Lauren/ERD%20Database.png)
 
 
