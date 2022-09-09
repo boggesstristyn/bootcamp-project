@@ -3,8 +3,8 @@
 Our initial data sources are:
 - Austin Police Department Crime Data CSV: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu
 - Austin Housing Market Analysis Data by Zip Code CSV: https://data.austintexas.gov/Housing-and-Real-Estate/2014-Housing-Market-Analysis-Data-by-Zip-Code/hcnj-rei3
-- City of Austin Housing and Planning Displacement Risk Areas CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Areas-2019/rbpe-nc57
-- City of Austin Housing and Planning Displacement Risk Demographics CSV: https://data.austintexas.gov/Locations-and-Maps/Displacement-Risk-Demographics-2019/ynwn-mw2f
+- City of Austin Housing and Planning Displacement Risk Areas CSV: https://data.austintexas.gov/Housing-and-Real-Estate/City-of-Austin-Displacement-Risk-Areas-2020/g9wh-kemg
+- City of Austin Housing and Planning Anti-Displacement Data CSV: https://data.austintexas.gov/Housing-and-Real-Estate/Project-Connect-Anti-Displacement-Dashboard-Data-2/e2tx-ut3v
 
 To explore and clean our data, we will use Python and the Pandas library. The crime dataset will likely require the most cleaning, as not all of the column variables will be necessary for our analysis and there are numerous incidents (rows) that have null values. We will most likely lose a significant amount of data with our cleaning, but with over 2.39 million incident entries, we may still need to apply a filter on the results to only include the most recent year’s data in our analysis. The remaining datasets will likely require more cleaning in regards to columns that are not needed for our project and finding common variables to link the multiple datasets by for our database creation. We intend to use the Displacement Risk Demographics dataset for our machine learning algorithm, so we will need to determine which variables will be the most helpful for our model. 
 
