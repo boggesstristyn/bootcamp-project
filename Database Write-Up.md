@@ -12,5 +12,5 @@ Within each database we cleaned the columns and checked the data types. After cl
 
 For reference we also updated our ERD tables. Below is the ERD:
 
-![Alt Text]()
+![Alt Text](https://github.com/boggesstristyn/bootcamp-project/blob/Database/ERD.png)
 
