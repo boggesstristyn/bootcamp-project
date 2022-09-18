@@ -6,7 +6,7 @@ During this phase of the project, created the databases using the three source c
 2. displacement_risk_cleaning.ipynb
 3. housing_cleaning.ipynb
 
-Within each database we cleaned the columns and checked the data types. After cleaning, we were able to create dataframes. Once the dataframes were established, we imported SQLite to our code and created tables in SQL. For example, here is the connection for our crime reports 
+Within each database we cleaned the columns and checked the data types. After cleaning, we were able to create dataframes. Once the dataframes were established, we imported SQLite to our code and created tables in SQL. For example, here is the connection for our crime reports. This was replicated for both the displacement risk databaes connection and the house cleaning database connection.
 
 ![Alt Text](https://github.com/boggesstristyn/bootcamp-project/blob/Database/Database%20Connection.png)
 
