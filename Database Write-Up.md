@@ -6,7 +6,9 @@ During this phase of the project, created the databases using the three source c
 2. displacement_risk_cleaning.ipynb
 3. housing_cleaning.ipynb
 
-Within each database we cleaned the columns and checked the data types. After cleaning, we were able to create dataframes. Once the dataframes were established, we imported SQLite to our code and created tables in SQL. 
+Within each database we cleaned the columns and checked the data types. After cleaning, we were able to create dataframes. Once the dataframes were established, we imported SQLite to our code and created tables in SQL. For example, here is the connection for our crime reports 
+
+![Alt Text]()
 
 For reference we also updated our ERD tables. Below is the code:
 
