@@ -17,12 +17,6 @@
 - Austin Housing Market Analysis Data by Zip Code CSV: https://data.austintexas.gov/Housing-and-Real-Estate/2014-Housing-Market-Analysis-Data-by-Zip-Code/hcnj-rei3 
 - City of Austin Housing and Planning Anti-Displacement Data CSV: https://data.austintexas.gov/Housing-and-Real-Estate/Project-Connect-Anti-Displacement-Dashboard-Data-2/e2tx-ut3v* 
 
-## Visuals
-
-![Screen Shot 2022-09-18 at 20 16 42](https://user-images.githubusercontent.com/103851131/190938544-586e28ff-bc2d-4c32-a845-641884071422.png)
-
-
-
 ## Dashboard
 
 #### As our data contains latitude, longitude, and Census Tract identifiers, we want to utilize a map as the main component of our dashboard. The map will allow the user to select a Census Tract area from the map, where then summary demographic metrics and crime statistics for the selected Census Tract will be displayed under the map.
@@ -32,3 +26,12 @@
 #### To ensure that anyone who visits our dashboard understands the information presented in the visualizations, we will include our topic, definitions, model use and results, and dashboard purpose in a summary statement to the left of the interactive features. Below is a storyboard of what the dashboard would look like.
 
 #### Dashboard outline can be found on our presentation [Slides](https://docs.google.com/presentation/d/1-TiG67iIzo5gKKd23wOaXQg1TtN5CmG_sfSwT-wCHaw/edit#slide=id.p). 
+
+## Visuals
+
+![Screen Shot 2022-09-18 at 20 16 42](https://user-images.githubusercontent.com/103851131/190938544-586e28ff-bc2d-4c32-a845-641884071422.png)
+
+<img width="648" alt="Screen Shot 2022-09-18 at 21 33 02" src="https://user-images.githubusercontent.com/103851131/190942288-f3636aeb-9fc3-42a9-bb2b-eea6df7e7fd5.png">
+
+<img width="642" alt="Screen Shot 2022-09-18 at 21 44 57" src="https://user-images.githubusercontent.com/103851131/190942302-ecd81101-dcd5-4313-b0c2-ecb1be1c8ece.png">
+
