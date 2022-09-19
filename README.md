@@ -11,6 +11,10 @@
 - In regards to displacement risk, what is the most relevant demographic metric?
 - Is it possible to predict if a population is vulnerable to gentrification or not?
 
+## Communication
+
+#### Communicating primarily through Slack group and meeting outside of class through Zoom calls on the weekends. 
+
 ## Data Sources
 
 - Austin Police Department Crime Data CSV: https://data.austintexas.gov/Public-Safety/Crime-Reports/fdj4-gpfu 
