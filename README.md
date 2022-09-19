@@ -25,7 +25,7 @@
 - Segmented "VULNERABLE Pop" column for use as the target (dependent) variable and removed it from the DataFrame.
 - Standardized X_train and X_test datasets using StandardScaler.
 
-### Preliminary feature engineering and preliminary feature selection, including the decision-making process
+### Preliminary feature engineering, preliminary feature selection, and decision-making process
 - We decided to use the "VULNERABLE Pop" column as our dependent variable as it provides a simple Boolean output we can model with our Logistic Regression model.
 - Upon testing our Random Forest model, we were able to produce a feature importance list using the feature_importances_ function. This list will help us determine which features to remove in order to avoid overfitting our model.
 - If we had more time, we would perform an outlier analysis for each of our 37 features in order to determine if further preprocessing is needed.
@@ -33,7 +33,7 @@
 ### Description of how data was split into training and testing sets
 - Data was split using train_test_split before standardizing the data. We will be using the same standardized training and testing sets for both of our models in order to compare the performance of the models on an equal basis.
 
-### Explanation of model choice, including limitations and benefits
+### Explanation of model choice, limitations, and benefits
 #### Logistic Regression Model
 - We chose a simple Logistic Regression since our "VULNERABLE Pop" dependent variable provides a simple Boolean output that could be accurately modeled through logistic regression.
 - A benefit of starting our analysis with a logistic regression is that it will serve as a basic benchmark to test the performance of additional models and optimization options.
