@@ -17,6 +17,34 @@
 - Austin Housing Market Analysis Data by Zip Code CSV: https://data.austintexas.gov/Housing-and-Real-Estate/2014-Housing-Market-Analysis-Data-by-Zip-Code/hcnj-rei3 
 - City of Austin Housing and Planning Anti-Displacement Data CSV: https://data.austintexas.gov/Housing-and-Real-Estate/Project-Connect-Anti-Displacement-Dashboard-Data-2/e2tx-ut3v* 
 
+## Machine Learning Model
+
+### Preliminary Data Preprocessing
+- Encoded "VULNERABLE Pop" column to use as dependent variable.
+- Encoded "GENTRIFICATION Typology", "DEMOGRAPHIC Change", "HOUSING_MARKET", "DISPLACEMENT RISK" columns to use as independent variables.
+- Segmented "VULNERABLE Pop" column for use as the target (dependent) variable and removed it from the DataFrame.
+- Standardized X_train and X_test datasets using StandardScaler.
+
+### Preliminary feature engineering and preliminary feature selection, including the decision-making process
+- We decided to use the "VULNERABLE Pop" column as our dependent variable as it provides a simple Boolean output we can model with our Logistic Regression model.
+- Upon testing our Random Forest model, we were able to produce a feature importance list using the feature_importances_ function. This list will help us determine which features to remove in order to avoid overfitting our model.
+- If we had more time, we would perform an outlier analysis for each of our 37 features in order to determine if further preprocessing is needed.
+
+### Description of how data was split into training and testing sets
+- Data was split using train_test_split before standardizing the data. We will be using the same standardized training and testing sets for both of our models in order to compare the performance of the models on an equal basis.
+
+### Explanation of model choice, including limitations and benefits
+#### Logistic Regression Model
+- We chose a simple Logistic Regression since our "VULNERABLE Pop" dependent variable provides a simple Boolean output that could be accurately modeled through logistic regression.
+- A benefit of starting our analysis with a logistic regression is that it will serve as a basic benchmark to test the performance of additional models and optimization options.
+- The main current limitation of our both our models is it seems the models are re-creating the classifier that created the "VULNERABLE Pop" column. This is supported by a correlation analysis of our full DataFrame which shows none of our features are perfectly correlated to our dependent variable. As a result, our model is currently producing 100% accuracy results.
+
+#### Random Forest Model
+- We chose a basic Random Forest classifier as ensemble models are capable of handling datasets with many features. Our training dataset contains approximately 37 features across over 2200 rows.
+- A benefit to testing a Random Forest model is it allows us to determine a feature importance list from which can be used to inform the feature reduction process.
+- This model is also currently producing 100% accuracy results.
+
+
 ## Dashboard
 
 #### As our data contains latitude, longitude, and Census Tract identifiers, we want to utilize a map as the main component of our dashboard. The map will allow the user to select a Census Tract area from the map, where then summary demographic metrics and crime statistics for the selected Census Tract will be displayed under the map.
