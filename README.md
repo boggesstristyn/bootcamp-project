@@ -8,5 +8,7 @@ As Austin, TX, experiences its own rapid growth and change, we can see families 
 Are crime rates higher in areas with greater displacement risk?
 
 -What is the relation between gentrification and crime?
+
 -In regards to displacement risk, what is the most relevant demographic metric?
+
 -Is it possible to predict if a population is vulnerable to gentrification or not?
