@@ -6,6 +6,7 @@ Cities grow and change, and citizens and businesses adapt to these changes. A co
 As Austin, TX, experiences its own rapid growth and change, we can see families displaced and shifts in cultural comfort. Is there a correlation between gentrification and crime rates? Because we are mostly Austin locals, our group has decided to take an analytical look at gentrification and crime rates in these areas.
 
 Are crime rates higher in areas with greater displacement risk?
+
 -What is the relation between gentrification and crime?
 -In regards to displacement risk, what is the most relevant demographic metric?
 -Is it possible to predict if a population is vulnerable to gentrification or not?
