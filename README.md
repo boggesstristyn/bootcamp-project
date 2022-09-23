@@ -93,7 +93,7 @@
 
  - Showing the number of crime reports over the last four years.
 
-<img width="648" alt="Screen Shot 2022-09-18 at 21 33 02" src="https://user-images.githubusercontent.com/103851131/190942288-f3636aeb-9fc3-42a9-bb2b-eea6df7e7fd5.png">
+![Screen Shot 2022-09-22 at 20 44 02](https://user-images.githubusercontent.com/103851131/191878450-65056ac6-0006-481b-b8fb-60fa75a39f21.png)
 
 - In continuation of the crime rates over time, we can see that the top five crimes are theft, various burglaries, family disturbances, assault, and criminal conspiracy.
 
