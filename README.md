@@ -10,7 +10,7 @@
 
 #### To meet the increasing demand for housing, Austin's City Council has reviewed regulations pertaining to new building height limits next to existing single-family homes [4], updating vertical mixed-use (VMU) buildings' height allowances and affordability requirements [4], and rezoning/upzoning requests [5]. A growing side effects of these changes is the displacement of current residents when they can no longer afford the rising prices. 
 
-#### But what metrics make a neighborhood more suscepitable to displacement caused by gentrification? This is the main question we explore in our analysis of demographic statistics and crime reports data. Our goals is to determine which metrics are most influencial in determining if an area is vulnerable to genetrification risk and implenting those metrics into a machine learning model that could be applied to other cities. As long as a city can collect basic census metrics like race, income, education, and housing data, the model could be applied. 
+#### But which metrics make a neighborhood more suscepitable to displacement caused by gentrification? This is the main question we explore in our analysis of demographic statistics and crime reports data. Our goals is to determine which metrics are most influencial in determining if an area is vulnerable to genetrification risk and implenting those metrics into a machine learning model that could be applied to other cities. As long as a city can collect basic census metrics like race, income, education, and housing data, the model could be applied. 
 
 ### Questions
 1. In regards to displacement risk, what are the most relevant demographic metrics?
