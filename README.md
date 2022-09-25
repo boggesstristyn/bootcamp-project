@@ -43,6 +43,8 @@
 
 ### Requirements
 
+#### [Link](https://github.com/boggesstristyn/bootcamp-project/blob/main/Resources/requirements.txt) to requirements.txt file. 
+
 ## Database
 
 #### To explore and clean our data, we used Python and the Pandas library via Jupyter Notebook. The Displacement dataset was saved as a CSV directly from the data.austintexas.gov website, while the Crime dataset was collected via an API call to limit the over 2.39 million incident report entries. Exploratory analysis was performed by examining unique column values, grouping data by zip codes and census tract, and generating descriptive statistics for columns we initially thought would have the most impact on our machine learning model. The remainder of our exploration was in the form of preprocessing the data for our multiple machine learning model tests. 
