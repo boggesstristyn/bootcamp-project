@@ -78,11 +78,11 @@
 
 ## Dashboard
 
-#### [Link]() to Tableau dashboard. 
+#### [Link](https://public.tableau.com/app/profile/carina.diaz/viz/AustinGentrification_Dashboard/Dashboard1) to Tableau dashboard. 
 
 ## Presentation
 
-#### [Link]() to Google Slides presentation. 
+#### [Link](https://docs.google.com/presentation/d/1-TiG67iIzo5gKKd23wOaXQg1TtN5CmG_sfSwT-wCHaw/edit) to Google Slides presentation. 
 
 ## Results
 
