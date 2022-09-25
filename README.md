@@ -4,13 +4,13 @@
 
 ### Purpose
 
-#### As cities grow and change, citizens and businesses have to adapt to changed caused by gentrification. While gentrification can be seen as a way of bringing in new and refreshed life into an already established neighborhood or city by some, it is best defined as the "process in which a poor area experiences an influx of middle-class or wealthy people who renovate and rebuild homes and business and which often results in an increase in property values and the displacement of earlier, usually poorer residents" [1]. As our group comprises of mostly Austin natives, we chose to focus on the impact of population growth and gentrification in Austin, TX. 
+#### As cities grow and change, citizens and businesses have to adapt to changes caused by gentrification. While gentrification can be seen as a way of bringing in new and refreshed life into an already established neighborhood or city by some, it is best defined as the "process in which a poor area experiences an influx of middle-class or wealthy people who renovate and rebuild homes and business and which often results in an increase in property values and the displacement of earlier, usually poorer residents" [1]. As our group comprises of mostly Austin natives, we chose to focus on the impact of population growth and gentrification in Austin, TX. 
 
-#### Austin has experienced rapid growth in recent years and the impacts of gentrification can be seen across the city. Taller mixed-use buildings are being built throughout the city, no longer focused primarily downtown. Home prices have jumped dramaticially across the city, nearly tripling since 2011 with the median home price reaching a high of $667,000 May of this year [2]. Median rent has also increased over 40% over the past year, the greatest increase in median rent for any US metropolitan area [3]. 
+#### Austin has experienced rapid growth in recent years and the impacts of gentrification can be seen across the city. Taller mixed-use buildings are being built throughout the city, no longer primarily limited to downtown. Home prices have jumped dramaticially across the city, nearly tripling since 2011 with the median home price reaching a high of $667,000, as of May of this year [2]. Median rent has also increased over 40% over the past year, the greatest increase in median rent for any US metropolitan area [3]. 
 
 #### To meet the increasing demand for housing, Austin's City Council has reviewed regulations pertaining to new building height limits next to existing single-family homes [4], updating vertical mixed-use (VMU) buildings' height allowances and affordability requirements [4], and rezoning/upzoning requests [5]. A growing side effects of these changes is the displacement of current residents when they can no longer afford the rising prices. 
 
-#### But which metrics make a neighborhood more suscepitable to displacement caused by gentrification? This is the main question we explore in our analysis of demographic statistics and crime reports data. Our goals is to determine which metrics are most influencial in determining if an area is vulnerable to genetrification risk and implementing those metrics into a machine learning model that could be applied to other cities. As long as a city can collect basic census metrics like race, income, education, and housing data, the model could be applied. 
+#### But which metrics make a neighborhood more suscepitable to displacement caused by gentrification? This is the main question we explore in our analysis of demographic statistics and crime reports data. Our goals is to analyze which metrics are most influencial in determining if an area is vulnerable to genetrification risk and implementing those metrics into a machine learning model that could be applied to other cities. As long as a city can collect basic census metrics like race, income, education, and housing data, the model could be applied. 
 
 ### Questions
 1. In regards to displacement risk, what are the most relevant demographic metrics?
@@ -84,7 +84,7 @@
 
 #### [Link](https://public.tableau.com/app/profile/carina.diaz/viz/AustinGentrification_Dashboard/Dashboard1) to Tableau dashboard. 
 
-![dashboard.png]()
+![dashboard.PNG](https://github.com/boggesstristyn/bootcamp-project/blob/main/Images/dashboard.PNG)
 
 ## Presentation
 
