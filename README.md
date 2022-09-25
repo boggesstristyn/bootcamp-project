@@ -101,9 +101,7 @@
 
 - In continuation of the crime rates over time, we can see that the top five crimes are theft, various burglaries, family disturbances, assault, and criminal conspiracy.
 
-<img width="642" alt="Screen Shot 2022-09-18 at 21 44 57" src="https://user-images.githubusercontent.com/103851131/190942302-ecd81101-dcd5-4313-b0c2-ecb1be1c8ece.png">
 
-- Beginning stage of mapping crime in relation to various areas.
 
 
 
