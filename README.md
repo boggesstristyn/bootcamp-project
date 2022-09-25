@@ -38,6 +38,8 @@
 ### Software
 - Jupyter Notebook
 - Pandas
+- Sklearn
+- Matplotlib
 - SQLite
 - Tableau
 
