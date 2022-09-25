@@ -84,24 +84,30 @@
 
 #### [Link](https://public.tableau.com/app/profile/carina.diaz/viz/AustinGentrification_Dashboard/Dashboard1) to Tableau dashboard. 
 
+![dashboard.png]()
+
 ## Presentation
 
 #### [Link](https://docs.google.com/presentation/d/1-TiG67iIzo5gKKd23wOaXQg1TtN5CmG_sfSwT-wCHaw/edit) to Google Slides presentation. 
 
 ## Results
 
-### 
+#### 
 
 
-![Screen Shot 2022-09-18 at 20 16 42](https://user-images.githubusercontent.com/103851131/190938544-586e28ff-bc2d-4c32-a845-641884071422.png)
+![crime_over_time.png](https://github.com/boggesstristyn/bootcamp-project/blob/main/Images/crime_over_time.png)
 
  - Showing the number of crime reports over the last four years.
 
-![Screen Shot 2022-09-22 at 20 44 02](https://user-images.githubusercontent.com/103851131/191878450-65056ac6-0006-481b-b8fb-60fa75a39f21.png)
+![crimes_by_type.png](https://github.com/boggesstristyn/bootcamp-project/blob/main/Images/crimes_by_type.png)
 
 - In continuation of the crime rates over time, we can see that the top five crimes are theft, various burglaries, family disturbances, assault, and criminal conspiracy.
 
+![FeaturesCorrelation.PNG](https://github.com/boggesstristyn/bootcamp-project/blob/main/Images/FeaturesCorrelation.PNG)
 
+-
+
+![]()
 
 
 
