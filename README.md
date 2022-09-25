@@ -84,7 +84,7 @@
 
 #### [Link](https://public.tableau.com/app/profile/carina.diaz/viz/AustinGentrification_Dashboard/Dashboard1) to Tableau dashboard. 
 
-![dashboard.png]()
+![dashboard.PNG](https://github.com/boggesstristyn/bootcamp-project/blob/main/Images/dashboard.PNG)
 
 ## Presentation
 
