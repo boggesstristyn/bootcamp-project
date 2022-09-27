@@ -117,6 +117,9 @@
 
 - Random Forest model's independent features ranked by importance. 
 
+![ROC Curve for Basic SVM Model](https://user-images.githubusercontent.com/103288980/192428270-2fcf7f52-87c7-4de9-ae2a-1838a0a4ee07.PNG)
+
+- Our ROC Curve of our Basic SVM Model resulted in an Area Under the Curve value of 0.996
 
 
 
