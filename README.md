@@ -112,7 +112,7 @@
 
 - Initial implenentation of Random Forest Model with all independent variables. Removed features from this list due to high correlations and overfitting to the dataset. 
 
-![FeaturesImportance.PNG]()
+![FeaturesImportance.PNG](https://github.com/boggesstristyn/bootcamp-project/blob/main/Images/FeaturesImportance.PNG)
 
 - Random Forest model's independent features ranked by importance. 
 
