@@ -74,29 +74,29 @@
 ### Explanation of model choice, limitations, and benefits
 #### Logistic Regression Model
 - Choice
--- We choose to begin with this model since our dependent variable, "VULNERABLE Pop", provides a simple Boolean output that could be accurately modeled with a Logistic Regression.
+	- We choose to begin with this model since our dependent variable, "VULNERABLE Pop", provides a simple Boolean output that could be accurately modeled with a Logistic Regression.
 - Limitations
--- The main limitation of our both our models is it seems the model is re-creating the classifier that created the "VULNERABLE Pop" column. This is supported by a correlation analysis of our full DataFrame which shows none of our features are perfectly correlated to our dependent variable.
--- This model had trouble converging with a smaller number of iterations, we had to increase our max_iterations = 2000 for the model to converge.
+	- The main limitation of our both our models is it seems the model is re-creating the classifier that created the "VULNERABLE Pop" column. This is supported by a correlation analysis of our full DataFrame which shows none of our features are perfectly correlated to our dependent variable.
+	- This model had trouble converging with a smaller number of iterations, we had to increase our max_iterations = 2000 for the model to converge.
 - Benefit
--- A benefit is that it will serve as a basic benchmark to test the performance of additional models and optimization options.
+	- A benefit is that it will serve as a basic benchmark to test the performance of additional models and optimization options.
 
 #### SVC Model
 - Choice
--- We choose an SVM model since this is a ML Method specifically meant for binary classification.
+	- We choose an SVM model since this is a ML Method specifically meant for binary classification.
 - Limitations
--- Not the best for noisy data. This is important to us since did not test for outliers. If we had more time, we would have tested our features for outliers.
+	- Not the best for noisy data. This is important to us since did not test for outliers. If we had more time, we would have tested our features for outliers.
 - Benefit
--- Main benefit is SVC have less overfitting issues over smaller datasets.
+	- Main benefit is SVC have less overfitting issues over smaller datasets.
 
 #### Random Forest Model
 - Choice
--- We choose an RF model as it can be used on non-linear data. This is useful to us as not all of our features are clearly linear.
--- We also needed to create a feature importance list for our feature re-selection process.
+	- We choose an RF model as it can be used on non-linear data. This is useful to us as not all of our features are clearly linear.
+	- We also needed to create a feature importance list for our feature re-selection process.
 - Limitations
--- Long processing time and resource intensive. The RF notebook took my PC about 12 mins to run.
+	- Long processing time and resource intensive. The RF notebook took my PC about 12 mins to run.
 - Benefit
--- Resulted in 100% accuracy score even after re-selection of our features.
+	- Resulted in 100% accuracy score even after re-selection of our features.
 
 ### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
 In our first round of preprocessing, we only removed the unnecessary and redundant columns. This left many categorical variables in our model that were created by the researchers who compiled our dataset. Upon encoding our dataset, this yielded a total of 37 features. A large portion of these had strong correlations with our target variable. As a result, our model was already producing 100% accuracy results.
@@ -105,7 +105,7 @@ In our first round of preprocessing, we only removed the unnecessary and redunda
 We decided to remove all of the researcher created variables and see if we could recreate the results of the study using only census and housing data. This reduced our dataset to a total of 22 features. Since this information should be more readily available than the researcher’s metrics, it should be possible to retrain our model on other cities as well. 
 
 ### Description and explanation of model’s confusion matrix, including final accuracy score
-Our most accurate model after retraining was our Basic Random Forest model. This model achieved a recall and precision of 1.0. In contrast our SVC model resulted in a marginal improvement over the Logistic Regression model.
+Our most accurate model after retraining was our Basic Random Forest model. This model achieved a recall and precision of 1.0. In contrast our SVC model resulted in a marginal improvement over the Logistic Regression model in terms of recal, precision, and accuracy. We used balanced accuracy scores to provide a fair comparison of all models' results.
 
 #### Basic Logistic Regression Model
 
