@@ -56,29 +56,80 @@
 ## Machine Learning Model
 
 ### Preliminary Data Preprocessing
-- Encoded "VULNERABLE Pop" column to use as dependent variable.
-- Encoded "GENTRIFICATION Typology", "DEMOGRAPHIC Change", "HOUSING_MARKET", "DISPLACEMENT RISK" columns to use as independent variables.
-- Segmented "VULNERABLE Pop" column for use as the target (dependent) variable and removed it from the DataFrame.
-- Standardized X_train and X_test datasets using StandardScaler.
+		1. Dropped unnecessary (Names, GeoIDs, etc) and redundant (Percent without Bachelors, etc) columns. Total of 38 columns dropped.
+		2. Dropped rows with missing data using dropna.
+		3. Encoded categorical columns: “VULNERABLE Pop”
+		4. Standardized X_train and X_test datasets using StandardScaler.
+		5. Tested response variable (y_train) for class imbalance.
 
 ### Preliminary feature engineering, preliminary feature selection, and decision-making process
-- We decided to use the "VULNERABLE Pop" column as our dependent variable as it provides a simple Boolean output we can model with our Logistic Regression model.
-- Upon testing our Random Forest model, we were able to produce a feature importance list using the feature_importances_ function. This list will help us determine which features to remove in order to avoid overfitting our model.
-- If we had more time, we would perform an outlier analysis for each of our 37 features in order to determine if further preprocessing is needed.
+- Chose "VULNERABLE Pop" as our dependent variable because it provides a simple Boolean output we can model with a Logistic Regression model.
+- Using a Random Forest model, we were able to produce a feature importance list using the feature_importances_ function. This list helped us to determine which features to remove in order to avoid overfitting our model.
+- Upon testing our first model, our accuracy scores were 100% and we realized we were likely overfitting the model. We then performed a Correlation Analysis to determine which variables were most correlated to our predictions and removed all remaining non-census variables from the model.
 
 ### Description of how data was split into training and testing sets
-- Data was split using train_test_split before standardizing the data. We will be using the same standardized training and testing sets for both of our models in order to compare the performance of the models on an equal basis.
+- Data was split using train_test_split before standardizing the data. 
+- We will be using the same standardized training and testing sets for all of our models in order to compare the performance of the models on an equal basis.
 
 ### Explanation of model choice, limitations, and benefits
 #### Logistic Regression Model
-- We chose a simple Logistic Regression since our "VULNERABLE Pop" dependent variable provides a simple Boolean output that could be accurately modeled through logistic regression.
-- A benefit of starting our analysis with a logistic regression is that it will serve as a basic benchmark to test the performance of additional models and optimization options.
-- The main current limitation of our both our models is it seems the models are re-creating the classifier that created the "VULNERABLE Pop" column. This is supported by a correlation analysis of our full DataFrame which shows none of our features are perfectly correlated to our dependent variable. As a result, our model is currently producing 100% accuracy results.
+- Choice
+-- We choose to begin with this model since our dependent variable, "VULNERABLE Pop", provides a simple Boolean output that could be accurately modeled with a Logistic Regression.
+- Limitations
+-- The main limitation of our both our models is it seems the model is re-creating the classifier that created the "VULNERABLE Pop" column. This is supported by a correlation analysis of our full DataFrame which shows none of our features are perfectly correlated to our dependent variable.
+-- This model had trouble converging with a smaller number of iterations, we had to increase our max_iterations = 2000 for the model to converge.
+- Benefit
+-- A benefit is that it will serve as a basic benchmark to test the performance of additional models and optimization options.
+
+#### SVC Model
+- Choice
+-- We choose an SVM model since this is a ML Method specifically meant for binary classification.
+- Limitations
+-- Not the best for noisy data. This is important to us since did not test for outliers. If we had more time, we would have tested our features for outliers.
+- Benefit
+-- Main benefit is SVC have less overfitting issues over smaller datasets.
 
 #### Random Forest Model
-- We chose a basic Random Forest classifier as ensemble models are capable of handling datasets with many features. Our training dataset contains approximately 37 features across over 2200 rows.
-- A benefit to testing a Random Forest model is it allows us to determine a feature importance list from which can be used to inform the feature reduction process.
-- This model is also currently producing 100% accuracy results.
+- Choice
+-- We choose an RF model as it can be used on non-linear data. This is useful to us as not all of our features are clearly linear.
+-- We also needed to create a feature importance list for our feature re-selection process.
+- Limitations
+-- Long processing time and resource intensive. The RF notebook took my PC about 12 mins to run.
+- Benefit
+-- Resulted in 100% accuracy score even after re-selection of our features.
+
+### Explanation of changes in model choice (if changes occurred between the Segment 2 and Segment 3 deliverables)
+In our first round of preprocessing, we only removed the unnecessary and redundant columns. This left many categorical variables in our model that were created by the researchers who compiled our dataset. Upon encoding our dataset, this yielded a total of 37 features. A large portion of these had strong correlations with our target variable. As a result, our model was already producing 100% accuracy results.
+
+### Description of how model was trained (or retrained, if they are using an existing model)
+We decided to remove all of the researcher created variables and see if we could recreate the results of the study using only census and housing data. This reduced our dataset to a total of 22 features. Since this information should be more readily available than the researcher’s metrics, it should be possible to retrain our model on other cities as well. 
+
+### Description and explanation of model’s confusion matrix, including final accuracy score
+Our most accurate model after retraining was our Basic Random Forest model. This model achieved a recall and precision of 1.0. In contrast our SVC model resulted in a marginal improvement over the Logistic Regression model.
+
+#### Basic Logistic Regression Model
+
+![Logistic_Models_Results](https://user-images.githubusercontent.com/103288980/193155346-ff7569db-1ba7-4699-9c5d-d9b8c67edfc5.PNG)
+
+![BasicLogistic_ConfusionMatrix](https://user-images.githubusercontent.com/103288980/193155303-33b93671-f30e-4b97-befc-65ba344e5bc5.PNG)
+
+![BasicLogistic_ClassificationReport](https://user-images.githubusercontent.com/103288980/193155314-0fe763d3-6915-44c7-ab6d-48680a55d048.PNG)
+
+#### Basic SVC Model
+
+![SVC_Models_Results](https://user-images.githubusercontent.com/103288980/193155391-c8682fa6-12ff-4c6a-82c1-46e494448f29.PNG)
+
+![BasicSVM_ConfusionMatrix](https://user-images.githubusercontent.com/103288980/193155443-48592e85-09bf-4d3c-b7b5-7b4ea83471a9.PNG)
+
+![BasicSVM_ClassificationReport](https://user-images.githubusercontent.com/103288980/193155471-03d1dcfc-36f3-4a42-a254-543c613162cf.PNG)
+
+#### Basic Random Forest Model
+
+![RF_Models_Results](https://user-images.githubusercontent.com/103288980/193155380-d824748a-b327-432f-b974-7869b16c25bc.PNG)
+
+![BasicRF_ConfusionMatrix](https://user-images.githubusercontent.com/103288980/193155489-e874137a-a825-4466-beb0-7a2085970130.PNG)
+
+![BasicRF_ClassificationReport](https://user-images.githubusercontent.com/103288980/193155508-41414e28-63a5-40dc-b69c-51dec326021e.PNG)
 
 ## Dashboard
 
